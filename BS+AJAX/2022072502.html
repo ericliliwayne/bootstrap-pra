@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="data.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron" id="myJumbotron">
+        <!-- <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+        <button type="button" class="btn btn-primary" id="myBtn">Get data</button>
+      </div>
+    <p id="myP"></p>
+    <script>
+        $(document).ready(function () {
+        const myP = $('#myP');
+        const myJumbotron = $('#myJumbotron');
+        const myBtn = $('#myBtn');
+        
+
+            
+
+            myBtn.click(function () {
+                $(this).next('div').remove();
+                //3.axios
+            axios.get(dataurl)
+                .then(function (response) {
+                    //handle success
+                    let axiosData = response.data;
+                    console.log('axios', axiosData);
+                    let greenText = 
+            `<div class="alert alert-success alert-dismissible mt-5">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong>
+                <p>
+                    city => ${axiosData.city},<br>
+                    region => ${axiosData.region},<br>
+                    ip => ${axiosData.ip},<br>
+                    country => ${axiosData.country},<br>
+                    timezone => ${axiosData.timezone},<br>
+                </p>
+            </div>`;
+                    myJumbotron.append(greenText);
+                    myP.text(axiosData.ip);
+                })
+                .catch(function (error) {
+                    //handle error
+                    let redText = `
+                            <div class="alert alert-danger alert-dismissible mt-5">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>Failed!</strong> 
+                            <p>
+                               請檢查連線狀態
+                            </p>
+                            </div>
+                            `;
+                        myJumbotron.append(redText);
+                })
+                .then(function () {
+                    //always executed
+                })
+            })
+        myP.text('12345');
+        
+            //1.fetch
+            // fetch("https://ipinfo.io/json?token=c6e8fc2c42896f").then(
+            //     (response) => response.json()
+            // ).then(
+            //     (jsonResponse) => {
+            //         console.log('jsonResponse', jsonResponse.country);
+            //         console.log(jsonResponse.ip, jsonResponse.country);
+            //         myP.text(jsonResponse.ip);
+            //     }
+            // )
+
+            //2.ajax
+            // $.ajax({
+            //     url: dataurl,
+            //     type : "get",
+            //     datatype : 'json',
+            //     success: function (result,status) {
+            //         console.log('result',result);
+            //         console.log('status',status);
+            //         myP.text(response.ip);
+            //     },
+            //     error:function(xhr,status,error){
+
+            //     }
+            // });
+
+            
+        });
+
+
+
+
+        //練習一
+        //btn.click => 抓API資訊
+    </script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
