@@ -2,133 +2,263 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人網頁</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
-  
-          /* .column .row{
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人網頁</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* .column .row{
             display: inline-block;
           } */
-          .col-4{
+    /* .col-4{
             display: inline-block;
             border: 1px solid black;
           }
           .col-8{
             display: inline-block;
             border: 1px solid black;
-          }
-        </style>
+          } */
+  </style>
 </head>
 
 <body>
   <!-- 圖片輪播 -->
+  
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..." class="d-block w-100" alt="...">
         </div>
-        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </button>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
       </div>
-      <!-- 標提欄 -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-      <!-- 個人資料 -->
-        <div class="row">
-          <div class="col-4">
-            <div class="list-group" id="list-tab" role="tablist">
-              <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
-              <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-              <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
-              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
-            </div>
-          </div>
-          <div class="col-8">
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">您好，歡迎來到我的首頁</div>
-              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">456</div>
-              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">789</div>
-              <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">101112</div>
-            </div>
-          </div>
-        </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+  
+  <!-- 標提欄 -->
+  
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              1 of 2
-          </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  
+  <!-- 個人資料 -->
+  <div class="overflow-auto">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+            href="#list-home" role="tab" aria-controls="home">首頁</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+            href="#list-profile" role="tab" aria-controls="profile">個人介紹</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+            href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+            href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            您好，歡迎來到我的首頁</div>
+          <div class="tab-pane fade overflow-auto" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Culpa magni, consectetur velit distinctio deserunt, quae
+            nam laboriosam et fugit quisquam nulla nisi ea eius laborum dolorem cupiditate aut? Iusto perspiciatis
+            dolorum architecto tenetur nobis vel, ipsam, nihil iste, earum quibusdam esse! Nostrum soluta quae eaque
+            similique beatae hic, accusamus ipsam enim adipisci, corporis, aut odit voluptas cumque! Porro quasi
+            praesentium necessitatibus nulla ad omnis commodi dolorum tenetur quisquam hic quod dicta accusantium
+            accusamus nesciunt nam est, alias velit ab vero? Ipsa itaque asperiores quis reprehenderit, labore ad
+            laudantium deleniti mollitia enim ipsum alias, accusantium, dolore temporibus dolorum neque provident
+            nostrum et ea nisi impedit animi odit. Ut, aliquam magnam. Dolores natus amet quod quasi asperiores et
+            accusantium modi tempore quos nam id dolor vel consequatur sit deserunt illum ullam voluptas, autem
+            voluptatum incidunt cupiditate, nulla sequi sapiente! Itaque necessitatibus, possimus eum ducimus pariatur
+            totam quibusdam assumenda, natus, cupiditate eaque quisquam odio veritatis. Qui cum aut eius quisquam quos
+            error dolor eum enim ipsum voluptas! Qui laudantium id, ipsam, eligendi atque nostrum eveniet, modi
+            perferendis voluptates aut minima dolorem inventore hic pariatur? A, recusandae corrupti. Amet commodi
+            numquam quia pariatur aperiam minima dolor adipisci voluptatibus totam nulla quae, deleniti similique quod
+            quos, molestias labore dignissimos quas sint ex ad harum mollitia corporis perspiciatis? Nisi eos velit
+            facere atque deleniti quia vel fugit. Numquam odio id nesciunt deserunt temporibus, fuga ex tenetur quos
+            quae totam sit? Assumenda, in eius expedita dignissimos laboriosam qui ab reiciendis veritatis minus, sequi
+            quos culpa libero eveniet harum animi molestiae ipsa maxime. Ducimus dignissimos architecto praesentium qui,
+            veniam fugit expedita odit enim tempore ea itaque asperiores aspernatur vitae labore ab impedit, eos placeat
+            perspiciatis aperiam neque ratione? Explicabo delectus ea dolorem accusantium natus et vero, libero
+            inventore! Minus non amet, temporibus reiciendis error voluptate repudiandae consequuntur voluptatibus,
+            asperiores maiores odio unde nihil tenetur nam. Nobis fuga aut natus numquam earum pariatur sequi animi
+            possimus rerum atque non harum cupiditate nulla, quam autem iusto deleniti culpa illum velit in neque dicta
+            facilis perferendis? Sit suscipit maiores autem saepe excepturi? Corporis voluptatem, quibusdam amet sint
+            assumenda repellendus iusto minus consequatur fugiat nisi itaque ipsa blanditiis provident excepturi ratione
+            illum quidem repellat aspernatur ad optio odit consectetur, voluptatum in nobis! Odit rerum facere iure
+            asperiores earum molestias facilis molestiae, veritatis maiores. Temporibus totam velit, illum quidem
+            deleniti rem distinctio doloribus vitae eligendi voluptas cumque explicabo nulla est iusto veniam ullam nisi
+            quas nobis voluptate itaque provident earum eaque. Deleniti magni accusamus aperiam distinctio ad,
+            praesentium tempore veniam cupiditate libero hic quae dolorum, et itaque sint provident ex quo nam.
+            Necessitatibus iusto, quidem consequuntur quia consequatur labore illo est facilis quisquam! Quia provident
+            qui vero doloribus. Fugit, asperiores rerum accusantium assumenda saepe hic a corrupti ex nobis quo vero
+            officiis, voluptate ab totam illum ipsa sed nam voluptas tempora quae! Velit quibusdam adipisci hic? Sit
+            laudantium qui rem vero sequi nemo, delectus praesentium error ullam ea facilis inventore facere eius minus
+            officiis officia nam quisquam unde asperiores enim quo dolorem! Quisquam.</div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">789</div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">101112
           </div>
         </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+  <div class="container mt-5">
+    <h2>作品集</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2" style="width: 20rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+              <a href="#" class="btn btn-success">前往網站</a>
+              <a href="#" class="btn btn-info">看原始碼</a>
+          </div>
         </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2" style="width: 20rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+              <a href="#" class="btn btn-success">前往網站</a>
+              <a href="#" class="btn btn-info">看原始碼</a>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
-    </script>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2" style="width: 20rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+              <a href="#" class="btn btn-success">前往網站</a>
+              <a href="#" class="btn btn-info">看原始碼</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2" style="width: 20rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+              <a href="#" class="btn btn-success">前往網站</a>
+              <a href="#" class="btn btn-info">看原始碼</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2" style="width: 20rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-success">前往網站</a>
+            <a href="#" class="btn btn-info">看原始碼</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2" style="width: 20rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+              <a href="#" class="btn btn-success">前往網站</a>
+              <a href="#" class="btn btn-info">看原始碼</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 聯絡方式 -->
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
